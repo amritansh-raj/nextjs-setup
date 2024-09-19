@@ -169,7 +169,7 @@ echo "📦 Creating devcontainer.json..."
 mkdir -p .devcontainer
 cat <<EOL >.devcontainer/devcontainer.json
 {
-  "name": "$project_name",
+  "name": "$container_name",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20",
   "runArgs": ["--name", "$container_name"],
   "customizations": {
