@@ -17,13 +17,13 @@ The script simplifies the setup process for a Next.js project by configuring cri
    1.1 Using curl
 
    ```bash
-   curl -s https://raw.githubusercontent.com/amritansh-raj/nextjs-setup/main/setup.sh | bash -s -- <project_name> <container_name>
+   bash <(curl -s https://raw.githubusercontent.com/amritansh-raj/nextjs-setup/main/setup.sh)
    ```
 
    1.2 Using wget
 
    ```bash
-   wget -qO- https://raw.githubusercontent.com/amritansh-raj/nextjs-setup/main/setup.sh | bash -s -- <project_name> <container_name>
+   bash <(wget -qO- https://raw.githubusercontent.com/amritansh-raj/nextjs-setup/main/setup.sh)
    ```
 
 2. Clone the script:
