@@ -1,8 +1,15 @@
 #!/bin/bash
 
 # Step 1: Ask for project details
-read -p "Enter your project name: " project_name
-read -p "Enter your container name: " container_name
+if [ -t 0 ]; then
+  # Interactive shell
+  read -p "Enter your project name: " project_name
+  read -p "Enter your container name: " container_name
+else
+  # Non-interactive, use default or passed values
+  project_name=${1:-my-default-project}
+  container_name=${2:-my-container}
+fi
 
 # Step 2: Create Next.js app with bun
 echo "🚀 Creating Next.js app..."
