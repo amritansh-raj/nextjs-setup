@@ -1,15 +1,8 @@
 #!/bin/bash
 
 # Step 1: Ask for project details
-# Step 1: Check for input arguments
-if [ "$#" -lt 2 ]; then
-  echo "Usage: $0 <project_name> <container_name> [additional_packages]"
-  exit 1
-fi
-
-project_name=$1
-container_name=$2
-additional_packages=${3:-}
+read -p "Enter your project name: " project_name
+read -p "Enter your container name: " container_name
 
 # Step 2: Create Next.js app with bun
 echo "🚀 Creating Next.js app..."
@@ -29,7 +22,7 @@ else
 fi
 
 # Step 3: Ask for additional packages to install
-# read -p "Enter any additional packages to install (space-separated, or press Enter to skip): " additional_packages
+read -p "Enter any additional packages to install (space-separated, or press Enter to skip): " additional_packages
 
 # Step 4: Add necessary dependencies with a progress indicator
 echo "📦 Installing Husky, Commitlint, Prettier, and other packages..."
