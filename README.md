@@ -13,16 +13,35 @@ The script simplifies the setup process for a Next.js project by configuring cri
 
 ## 🚀 Usage
 
-1. Save the script as a `.sh` file (e.g., `setup-nextjs-project.sh`).
-2. Make the script executable:
+1. Execute the scipt:
+   1.1 Using curl
+
+   ```bash
+   curl -s https://raw.githubusercontent.com/amritansh-raj/nextjs-setup/main/setup.sh | bash
+   ```
+
+   1.2 Using wget
+
+   ```bash
+   wget -qO- https://raw.githubusercontent.com/amritansh-raj/nextjs-setup/main/setup.sh | bash
+   ```
+
+2. Clone the script:
+   2.1 Save the script as a `.sh` file (e.g., `setup-nextjs-project.sh`).
+
+   2.2. Make the script executable:
+
    ```bash
    chmod +x setup-nextjs-project.sh
    ```
-3. Run the script:
+
+   2.3. Run the script:
+
    ```bash
    ./setup-nextjs-project.sh
    ```
-4. Follow the prompts to enter your project and container name.
+
+3. Follow the prompts to enter your project and container name.
 
 ## 🧰 Features
 
