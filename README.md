@@ -14,6 +14,7 @@ The script simplifies the setup process for a Next.js project by configuring cri
 ## 🚀 Usage
 
 1. Execute the scipt:
+
    1.1 Using curl
 
    ```bash
